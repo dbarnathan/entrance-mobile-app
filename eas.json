@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 3.15.0",
+    "requireCommit": true
+  },
+  "build": {
+    "development": {
+      "env": {
+        "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+      },
+    
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+      }
+    }
+  }
+}

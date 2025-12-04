@@ -1,0 +1,143 @@
+import { StyleSheet } from 'react-native';
+import { colors, fontSize } from '../../theme'
+
+
+const styles = StyleSheet.create({
+  lightContent: {
+    backgroundColor: colors.lightyellow,
+    padding: 20,
+    borderRadius: 5,
+    marginTop: 30,
+    marginLeft: 30,
+    marginRight: 30,
+  },
+  dropdown: {
+    height: 50,
+    borderColor: 'gray',
+    borderWidth: 0.5,
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    width: '40%'
+  },
+  darkContent: {
+    backgroundColor: colors.gray,
+    padding: 20,
+    borderRadius: 5,
+    marginTop: 30,
+    marginLeft: 30,
+    marginRight: 30,
+  },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '80%',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 12,
+    elevation: 3,
+    backgroundColor: '#E6D6FA',
+  },
+  updateButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 12,
+    shadowColor: "#000000",
+    shadowOpacity: 0.3033,
+    shadowRadius: 2.5,
+    shadowOffset: {
+      height: 2,
+      width: 1
+    },
+
+    elevation: 3,
+    backgroundColor: '#E6D6FA',
+  },
+  sendButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 18,
+    borderRadius: 28,
+    shadowColor: "#000000",
+    shadowOpacity: 0.3033,
+    shadowRadius: 2.5,
+    shadowOffset: {
+      height: 2,
+      width: 1
+    },
+
+    elevation: 3,
+    backgroundColor: colors.green,
+
+  },
+
+  downloadButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    shadowColor: "#000000",
+    shadowOpacity: 0.3033,
+    shadowRadius: 2.5,
+    shadowOffset: {
+      height: 2,
+      width: 1
+    },
+
+    elevation: 3,
+    backgroundColor: '#E6D6FA',
+  },
+  logOut: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    width: '80%',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 12,
+    elevation: 3,
+    backgroundColor: '#e94d48',
+  },
+  main: {
+    flex: 1,
+    marginTop: 10,
+
+  },
+  title: {
+    fontSize: fontSize.middle,
+
+    textAlign: 'center',
+    color: "black"
+  },
+  contents: {
+    fontSize: fontSize.small,
+  },
+  field: {
+    fontSize: fontSize.middle,
+    textAlign: 'center',
+  },
+  send: {
+    position: "absolute",
+    height: 60,
+    width: 60,
+    borderRadius: 30,
+    backgroundColor: "#3686EF",
+    justifyContent: 'center',
+    zIndex: 200,
+
+    right: 30,
+
+    shadowColor: "#000000",
+    shadowOpacity: 0.3033,
+    shadowRadius: 2.5,
+    shadowOffset: {
+      height: 3,
+      width: 1
+    },
+    elevation: 5,
+  },
+})
+
+export default styles

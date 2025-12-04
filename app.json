@@ -1,0 +1,110 @@
+{
+  "expo": {
+    "name": "Entrance Group",
+    "scheme": "entrance",
+    "slug": "entrance-mobile-app",
+    "owner": "entrance-group",
+    "privacy": "public",
+    "jsEngine": "hermes",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.5.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/purpleE.png",
+    "splash": {
+      "image": "./assets/images/purpleE.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 10000,
+      "url": "https://u.expo.dev/31076b0f-91c6-4d03-b811-745c3c3accc2"
+    },
+    "build": {
+      "development": {
+        "env": {
+          "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+        }
+      },
+      "production": {
+        "env": {
+          "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+        }
+      },
+      "test": {
+        "env": {
+          "EXPO_PUBLIC_LIVE": "apiv2.entrancegrp.com"
+        }
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.entrance.group",
+      "buildNumber": "20",
+      "associatedDomains": [
+        "applinks:https://entrancegrp.com/"
+      ],
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Use the photo library to change your avatar."
+      },
+      "userInterfaceStyle": "automatic",
+      "usesAppleSignIn": false,
+      "bitcode": false
+    },
+    "android": {
+      "package": "com.expo.entrance.group",
+      "versionCode": 10,
+      "userInterfaceStyle": "automatic",
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "svg",
+        "ts",
+        "tsx"
+      ]
+    },
+    "description": "",
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "31076b0f-91c6-4d03-b811-745c3c3accc2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  },
+  "runtimeVersion": {
+    "policy": "appVersion"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "c4c76c29-494f-42a7-a884-7b8f77c664c5"
+    }
+  }
+}
